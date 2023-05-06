@@ -35,11 +35,11 @@ const Authenticationlayout =()=>{
                 
 
             </nav>
-             <div className="w-full bg-slate-100 " >
-             <div class="mx-20"> <Outlet />
+             <div className="w-full h-screen bg-slate-100 " >
+              <Outlet />
            
              <Footer/></div>
-              </div>
+           
           
 
         </div>

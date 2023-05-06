@@ -4,8 +4,7 @@ import { Menu } from '@headlessui/react';
 
 const footer=()=>{
     return(
-         <div>
-            <div className=" flex flex-row justify-between w-full p-10 bg-slate-100   ">
+            <div className=" flex flex-row justify-between  p-10    ">
                 <div className="flex  items-center justify-between my-8">
                     <div className="inline-flex  w-full  gap-2  ">
                         <button type="button" className="items-center px-2 py-2 border-2 rounded-xl bg-slate-300">
@@ -76,7 +75,6 @@ const footer=()=>{
                  
            
 
-       </div>
        </div>
     )
 }

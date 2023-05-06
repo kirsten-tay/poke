@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const landing = ()=>{
     return (
-        <div className="w-full bg-cover fixed bg-slate-100 p-20">
+        <div className="w-full h-screen bg-cover fixed bg-slate-100 p-20">
             <div className="flex justify-center pt-20">
             <Log />
             </div>
