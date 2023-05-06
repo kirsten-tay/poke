@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const landing = ()=>{
     return (
-        <div className="w-full bg-cover fixed bg-slate-100 p-10">
-            <div className="flex justify-center pt-16">
+        <div className="w-full bg-cover fixed bg-slate-100 p-20">
+            <div className="flex justify-center pt-20">
             <Log />
             </div>
              <div className="flex flex-col items-center p-5   ">
@@ -18,9 +18,9 @@ const landing = ()=>{
                 </div>
                  
                       </div>
-                      <div className="flex flex-col justify-center items-center my-10 pb-20">
+                      <div className="flex flex-col justify-center items-center my-14 pb-40">
 
-                    <div className=' flex rounded-full w-1/3 p-1 border-8 border-pink-500'>
+                    <div className=' flex rounded-full w-1/3 p-2 border-8 border-pink-500'>
                         <div className="flex justify-between w-full"> 
                        <input type="search" class="flex w-full rounded-full px-3 bg-slate-100 py-2 text-2xl" placeholder='Enter pokemon name'/>
                        <Link to='/dashboard'  className=" relative item-center  inline-flex m-1 w-10 h-10 rounded-full bg-pink-500 ">
