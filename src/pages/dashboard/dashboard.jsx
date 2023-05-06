@@ -10,7 +10,7 @@ import dino4 from './../../Assets/dino4.svg'
 const dashboard =()=>{
     return(
             <div className='flex flex-row justify-center items-center w-full p-5'>
-                    <div className="grid grid-col-1 lg:grid-cols-4 p-10 gap-x-6 gap-y-4 ">
+                    <div className="grid grid-col-1 lg:grid-cols-4 px-30 gap-x-6 gap-y-4 ">
                         <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
                               <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
                                     <img src={dino} className="  justify-center h-50 w-40 " alt='poke' />
