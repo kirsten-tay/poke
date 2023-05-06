@@ -7,15 +7,12 @@ import Dashboard from './pages/dashboard/dashboard';
 function App() {
   return (
     <Routes>
-                   
               <Route index element={<Landing />} />
-             
-
               <Route path="/" element={<Authenticationlayout/>}>
- <Route className="w-full bg-slate-100 " >
-                  <Route path="dashboard" element={<Dashboard/>}/>
+
+              <Route path="dashboard" element={<Dashboard/>}/>
                </Route>
-         </Route>
+
     </Routes>
 
 

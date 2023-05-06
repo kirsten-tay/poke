@@ -9,12 +9,11 @@ import dino4 from './../../Assets/dino4.svg'
 
 const dashboard =()=>{
     return(
-        <div>
             
                     <div className="grid grid-col-1 lg:grid-cols-4 p-10 gap-x-6 gap-y-10">
                         <div className=" border-2 p-5  bg-white rounded-xl  my-10 ">
                               <div className=" bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino} className="  item-center absolute  " />
+                                    <img src={dino} className="  item-center absolute  " alt='poke' />
                               </div>
                               <div className="flex-col m-7">
                                 <span className="flex justify-center font-bold text-3xl">
@@ -36,7 +35,7 @@ const dashboard =()=>{
                     
                          <div className="  border-2 p-5  bg-white rounded-xl  my-10 ">
                               <div className=" bg-slate-100 h-40 w-full">
-                                    <img src={dino2} className="  " />
+                                    <img src={dino2} className="  " alt='poke' />
                                </div> 
                                <div className=" flex-col m-7">
                                 <span className="flex justify-center font-bold text-3xl">
@@ -58,7 +57,7 @@ const dashboard =()=>{
                     
                         <div className="  border-2 p-5  bg-white rounded-xl  my-10 ">
                             <div className=" bg-slate-100 h-40 w-full">
-                                    <img src={dino3} className="  " />
+                                    <img src={dino3} className="  " alt='poke'/>
                             </div> 
                             <div className=" flex-col m-7">
                                 <span className="flex justify-center font-bold text-3xl">
@@ -77,7 +76,7 @@ const dashboard =()=>{
                     
                             <div className="  border-2 p-5  bg-white rounded-xl my-10 ">
                              <div className=" bg-slate-100 h-40 w-full">
-                                    <img src={dino4} className="  " />
+                                    <img src={dino4} className="  " alt='poke'/>
                              </div>
                              <div className=" flex-col m-7">
                                 <span className="flex justify-center font-bold text-3xl">
@@ -98,7 +97,7 @@ const dashboard =()=>{
 
                             <div className="  border-2 p-5  bg-white rounded-xl my-10 ">
                              <div className=" bg-slate-100 h-40 w-full">
-                                    <img src={dino4} className="  " />
+                                    <img src={dino4} className="  " alt='poke' />
                              </div>
                              <div className=" flex-col m-7">
                                 <span className="flex justify-center font-bold text-3xl">
@@ -119,7 +118,7 @@ const dashboard =()=>{
                            
                             <div className=" border-2 p-5  bg-white rounded-xl my-10 ">
                               <div className=" bg-slate-100 h-40 w-full">
-                                    <img src={dino} className="   " />
+                                    <img src={dino} className="   "  alt='poke'/>
                               </div>
                               <div className="flex-col m-7">
                                 <span className="flex justify-center font-bold text-3xl">
@@ -140,7 +139,7 @@ const dashboard =()=>{
 
                             <div className="  border-2 p-5  bg-white rounded-xl my-10 ">
                               <div className=" bg-slate-100 h-40 w-full">
-                                    <img src={dino2} className="  " />
+                                    <img src={dino2} className="  " alt='poke'/>
                                </div> 
                                <div className=" flex-col m-7">
                                 <span className="flex justify-center font-bold text-3xl">
@@ -161,7 +160,7 @@ const dashboard =()=>{
 
                          <div className="  border-2 p-5  bg-white rounded-xl my-10 ">
                             <div className=" bg-slate-100 h-40 w-full">
-                                    <img src={dino3} className="  " />
+                                    <img src={dino3} className="  " alt='poke'/>
                             </div> 
                             <div className=" flex-col m-7">
                                 <span className="flex justify-center font-bold text-3xl">
@@ -182,7 +181,6 @@ const dashboard =()=>{
                     </div>
 
                     
-            </div>
         
         
                
