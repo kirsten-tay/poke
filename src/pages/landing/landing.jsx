@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const landing = ()=>{
     return (
         <div className="w-full bg-cover fixed bg-slate-100 p-10">
-            <div className="flex justify-center pt-20">
+            <div className="flex justify-center pt-10">
             <Log />
             </div>
              <div className="flex flex-col items-center p-5   ">
