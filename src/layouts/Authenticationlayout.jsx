@@ -3,7 +3,6 @@ import { Outlet } from "react-router";
 import Log from "../components/Log";
 import Poke from "../components/Poke";
 import {MagnifyingGlassIcon} from '@heroicons/react/20/solid'
-import Footer from "./footer";
 
 const Authenticationlayout =()=>{
     return(
@@ -38,7 +37,7 @@ const Authenticationlayout =()=>{
              <div className="w-full h-screen bg-slate-100 " >
               <Outlet />
            
-             <Footer/></div>
+            </div>
            
           
 

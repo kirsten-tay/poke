@@ -18,7 +18,7 @@ const landing = ()=>{
                 </div>
                  
                       </div>
-                      <div className="flex flex-col justify-center items-center my-14 pb-40">
+                      <div className="flex flex-col justify-center items-center mt-10 pb-40">
 
                     <div className=' flex rounded-full w-1/3 p-2 border-8 border-pink-500'>
                         <div className="flex justify-between w-full"> 
