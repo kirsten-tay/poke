@@ -4,179 +4,159 @@ import dino2 from './../../Assets/dino2.svg'
 import dino3 from './../../Assets/dino3.svg'
 import dino4 from './../../Assets/dino4.svg'
 import Footer from "./../../layouts/footer.jsx";
+import { EyeIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 
 
 
 
 const dashboard =()=>{
+    
     return(
-        <div>
-            <div className='flex flex-row justify-center items-center w-full'>
-                    <div className="grid grid-col-1 lg:grid-cols-4 px-16 gap-x-6 gap-y-5 ">
-                        <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
-                              <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino} className="  justify-center h-50 w-40 " alt='poke' />
-                              </div>
-                              
-                                <span className="flex justify-center  text-3xl">
-                                    charizard
-                                </span>
-                                <div className=" flex flex-row justify-center  space-x-2  m-5">
-                                <span className="  items-center bg-slate-200 px-4  text-1xl h-6 rounded-full text-black ">
-                               🔥 Fire
-                                </span>
+        <div class="w-screen h-screen p-20 ">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-4 p-10">
+              <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2">
+                <div class="mx-auto max-w-7xl flex-1 w-60 ">
+                   <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
+                      <img src={dino} alt="poke" class="  absolute -top-12 right-0 left-0  mx-auto"/>
+                   </div>
+                      <span className="flex justify-center pt-1 text-3xl"> charizard</span>
+                        <div className=" flex flex-row justify-center  space-x-2  m-3">
+                                <span className="  items-center bg-slate-200 px-4  text-1xl h-6 rounded-full text-black "> 🔥 Fire </span>
 
-                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl  rounded-full text-black ">
-                                🦋 Flying
-                 
-                                </span>
-                                </div>
+                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl pb-3 rounded-full text-black ">🦋 Flying</span>
+
+                        </div>
+                </div>
+              </div>
+              <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2 ">
+                <div class="mx-auto max-w-7xl flex-1 w-60">
+                   <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
+                      <img src={dino2} alt="poke" class="  absolute -top-12 right-0 left-0  mx-auto"/>
+                   </div>
+                      <span className="flex justify-center pt-1 text-3xl"> ivysaur</span>
+                        <div className=" flex flex-row justify-center  space-x-2  m-5">
+                                <span className="  items-center bg-slate-200 px-4  text-1xl h-6 rounded-full text-black "> 🌿 Grass </span>
+
+                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl pb-3 rounded-full text-black ">☠️Poison</span>
+
+                        </div>
+                        </div>
+                        <Link to="./slideover" className=" flex items-center  justify-between bg-pink-500 p-2 h-10 m-2 text-1xl pb-3 rounded-full text-white ">View Pokemon 
+                        <EyeIcon class="h-6 w-6 " />
+                        </Link >
+
+   
+              </div>
+              <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2">
+                <div class="mx-auto max-w-7xl flex-1 w-60">
+                   <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
+                      <img src={dino3} alt="poke" class="  absolute -top-12 right-0 left-0  mx-auto"/>
+                   </div>
+                      <span className="flex justify-center pt-1 text-3xl"> raticate</span>
+                      <div className=" flex flex-row justify-center  space-x-2 m-5">
+                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black "> 🐻 Normal   </span>
+                      </div>
+                </div>
+              </div>
+              <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2">
+                <div class="mx-auto max-w-7xl flex-1 w-60">
+                   <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
+                      <img src={dino4} alt="poke" class="  absolute -top-12 right-0 left-0  mx-auto"/>
+                   </div>
+                      <span className="flex justify-center pt-1 text-3xl"> beedrill</span>
+                        <div className=" flex flex-row justify-center  space-x-2  m-5">
+                                <span className="  items-center bg-slate-200 px-4  text-1xl h-6 rounded-full text-black "> 🐞 Bug</span>
+
+                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl pb-3 rounded-full text-black "> ☠️ Poison</span>
+
+                        </div>
+                </div>
+              </div>
+
+              <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2">
+                <div class="mx-auto max-w-7xl flex-1 w-60">
+                   <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
+                      <img src={dino4} alt="poke" class="  absolute -top-12 right-0 left-0  mx-auto"/>
+                   </div>
+                      <span className="flex justify-center pt-1 text-3xl"> beedrill</span>
+                        <div className=" flex flex-row justify-center  space-x-2  m-5">
+                                <span className="  items-center bg-slate-200 px-4  text-1xl h-6 rounded-full text-black "> 🐞 Bug</span>
+
+                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl pb-3 rounded-full text-black "> ☠️ Poison</span>
+
+                        </div>
+                </div>
+              </div>
+
+              <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2">
+                <div class="mx-auto max-w-7xl flex-1 w-60">
+                   <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
+                      <img src={dino} alt="poke" class="  absolute -top-12 right-0 left-0  mx-auto"/>
+                   </div>
+                      <span className="flex justify-center pt-1 text-3xl"> charizard</span>
+                        <div className=" flex flex-row justify-center  space-x-2  m-5">
+                                <span className="  items-center bg-slate-200 px-4  text-1xl h-6 rounded-full text-black "> 🔥 Fire </span>
+
+                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl pb-3 rounded-full text-black ">🦋 Flying</span>
+
+                        </div>
+                </div>
+              </div>
+
+              <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2">
+                <div class="mx-auto max-w-7xl flex-1 w-60">
+                   <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
+                      <img src={dino2} alt="poke" class="  absolute -top-12 right-0 left-0  mx-auto"/>
+                   </div>
+                      <span className="flex justify-center pt-1 text-3xl"> ivysaur</span>
+                        <div className=" flex flex-row justify-center  space-x-2  m-5">
+                                <span className="  items-center bg-slate-200 px-4  text-1xl h-6 rounded-full text-black "> 🌿 Grass </span>
+
+                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl pb-3 rounded-full text-black ">☠️Poison</span>
+
+                        </div>
+                </div>
+              </div>
+
+              <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2">
+                <div class="mx-auto max-w-7xl flex-1 w-60">
+                   <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
+                      <img src={dino3} alt="poke" class="  absolute -top-12 right-0 left-0  mx-auto"/>
+                   </div>
+                      <span className="flex justify-center pt-1 text-3xl"> raticate</span>
+                      <div className=" flex flex-row justify-center  space-x-2 m-5">
+                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black "> 🐻 Normal   </span>
+                      </div>
+                </div>
+              </div>
+      
+      </div>
+        <Footer/>
+               
+                        
+                                
+                               
+                                
                                 
     
 
-                        </div>
+                        
                     
-                        <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
-                        <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino2} className="  " alt='poke' />
-                               </div> 
+                        
+                        
+                    
+                    
+
                                
-                                <span className="flex justify-center text-3xl">
-                                ivysaur
-                                </span>
-
-                                <div className=" flex flex-row justify-center  space-x-2 m-5">
-                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black ">
-                                🌿 Grass
-                                </span>
-
-                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl  rounded-full text-black ">
-                                ☠️ Poison
-                 
-                                </span>
-                                </div>
                                 
-                         </div>
-                    
-                    
-                         <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
-                         <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino3} className="  " alt='poke'/>
-                            </div> 
-                            
-                                <span className="flex justify-center  text-3xl">
-                                raticate
-                                </span>
-                                <div className=" flex flex-row justify-center  space-x-2 m-5">
-                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black ">
-                                🐻 Normal   
-                                </span>
-                                </div>
-                                
-                         </div>
-                    
-                    
-                         <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
-                         <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino4} className="  " alt='poke'/>
-                             </div>
-                                <span className="flex justify-center  text-3xl">
-                                beedrill
-                                </span>
-                                <div className=" flex flex-row justify-center  space-x-2 m-5">
-                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black ">
-                                🐞 Bug
-                                </span>
-
-                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl  rounded-full text-black ">
-                                ☠️ Poison
-                 
-                                </span>
-                                </div>
-                            </div>
-
-                            <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
-                            <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino4} className="  " alt='poke' />
-                             </div>
-                                <span className="flex justify-center  text-3xl">
-                                beedrill
-                                </span>
-                                <div className=" flex flex-row justify-center  space-x-2 m-5">
-                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black ">
-                                🐞 Bug
-                                </span>
-
-                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl  rounded-full text-black ">
-                                ☠️ Poison
-                 
-                                </span>
-                                </div>
-                            </div>
-                           
-                            <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
-                            <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino} className="   "  alt='poke'/>
-                              </div>
-                                <span className="flex justify-center  text-3xl">
-                                    charizard
-                                </span>
-                                <div className=" flex flex-row justify-center  space-x-2 m-5">
-                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black ">
-                               🔥 Fire
-                                </span>
-
-                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl  rounded-full text-black ">
-                                🦋 Flying
-                 
-                                </span>
-                                </div>
-                            </div>
-
-                            <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
-                            <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino2} className="  " alt='poke'/>
-                               </div> 
-                                <span className="flex justify-center  text-3xl">
-                                ivysaur
-                                </span>
-                                <div className=" flex flex-row justify-center  space-x-2 m-5">
-                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black ">
-                                🌿 Grass
-                                </span>
-
-                                <span className=" flex-row items-center bg-slate-200 px-4 h-6 text-1xl  rounded-full text-black ">
-                                ☠️ Poison
-                 
-                                </span>
-                                </div>
-                         </div>
-
-                         <div className="flex-row border-2 p-2  bg-white rounded-xl  w-80 h-72  my-10  ">
-                         <div className=" flex justify-center bg-slate-100 h-40 rounded-xl w-2/1">
-                                    <img src={dino3} className="  " alt='poke' />
-                            </div> 
-                                <span className="flex justify-center  text-3xl">
-                                raticate
-                                </span>
-                                <div className=" flex flex-row justify-center  space-x-2 m-5">
-                                <span className="  items-center bg-slate-200 px-4 h-6 text-1xl   rounded-full text-black ">
-                                🐻 Normal   
-                                </span>
-
-                                </div>
-                                
-                         </div>
+                         
 
 
 
-                    </div>
 
                     
-        </div>
-        <Footer/>
-               
 
             
 </div>
