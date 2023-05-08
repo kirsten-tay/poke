@@ -1,12 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router";
+import Modal from '../layouts/modal'
 import Log from "../components/Log";
 import Poke from "../components/Poke";
+import { Disclosure } from "@headlessui/react";
 import {MagnifyingGlassIcon} from '@heroicons/react/20/solid'
+
 
 const Authenticationlayout =()=>{
     return(
-        <div>
+   
+        <div class=' w-screen overflow-hidden h-screen'>
             <nav className=' w-full shadow-md  left-0 top-0    border-gray-200 '> 
             
           
@@ -27,17 +31,31 @@ const Authenticationlayout =()=>{
                       </div>
                        </div>
                        
-                     < div class=" flex relative p-2 sm:mx-auto sm:max-w-lg justify-end   h-20 w-full  ">
-                       <div className='flex border w-16 h-16 rounded-full border-slate-700'>
-                          <div className="rounded-full bg-pink-500 w-12 h-12 m-2 "></div>
-                       </div>
-                </div>
+                     < div class=" flex p-2 sm:mx-auto sm:max-w-lg justify-end   h-20 w-full  ">
+                     <Disclosure >
+              {({open }) => (
+            <>
+                <Disclosure.Button type='button'className='relative z-10 flex border w-16 h-16 rounded-full border-slate-700'>
+                          <div className="rounded-full bg-pink-500 w-12 h-12 m-2 ">
+                          <Disclosure.Panel >
+                          <div class="fixed inset-0 bg-gray-500 flex items-center justify-center bg-opacity-75 transition-opacity">
+                           <Modal/>
+                          </div>
+                          </Disclosure.Panel >
+                          </div>
+                     
+                     </Disclosure.Button>
+                     </>
+                     )}
+                     </Disclosure>
+
+                     </div>
                 
            </div>
                 
 
             </nav>
-             <div className="w-full h-screen bg-slate-100 " >
+             <div className=" bg-slate-100 " >
               <Outlet />
            
             </div>
