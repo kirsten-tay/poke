@@ -10,7 +10,7 @@ import {MagnifyingGlassIcon} from '@heroicons/react/20/solid'
 const Authenticationlayout =()=>{
     return(
    
-        <div class=' w-screen fixed h-screen'>
+        <div class=' w-screen  h-screen'>
             <nav className=' w-full shadow-md  left-0 top-0    border-gray-200 '> 
             
           
