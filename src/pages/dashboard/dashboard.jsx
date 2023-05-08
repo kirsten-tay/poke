@@ -15,7 +15,7 @@ const dashboard =()=>{
     
     return(
         <div class=" w-screen h-screen  p-20 pb-0 ">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-4 p-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-4">
               <div class="relative bg-white p-2 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-xl sm:px-2">
                 <div class="mx-auto max-w-7xl flex-1 w-60 ">
                    <div class="bg-gray-200 h-40 w-full flex-1 rounded-xl relative">
